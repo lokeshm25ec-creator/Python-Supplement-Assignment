@@ -1,12 +1,7 @@
-# Problem 82: Remove adjacent duplicates
-# Find and fix the error
-
 def remove_adjacent_duplicates(text):
     result = []
-    for char in text:
-        if len(result) == 0 or result[-1] != char:
-            result.append(char)
+    for c in text:
+        if not result or result[-1] != c:
+            result.append(c)
     return "".join(result)
 
-s = "programming"
-print(f"After removal: {remove_adjacent_duplicates(s)}")

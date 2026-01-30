@@ -1,12 +1,14 @@
 # Problem 79: Calculate compound interest
-# Find and fix the error
+# Fixed version
 
 def compound_interest(principal, rate, time, n):
-    amount = principal * (1 + rate / (n * 100)) ** (n * time)
+    amount = principal * (1 + (rate / 100) / n) ** (n * time)
     return amount - principal
 
 p = 1000
 r = 5
 t = 2
 n = 4
-print(f"Compound Interest: {compound_interest(p, r, t, n)}")
+
+print(f"Compound Interest: {compound_interest(p, r, t, n):.2f}")
+

@@ -2,8 +2,8 @@
 # Find and fix the error
 
 def count_case(text):
-    upper = 0
-    lower = 0
+    upper = sum(1 for c in text if c.isupper())
+    lower = sum(1 for c in text if c.islower())
     for char in text:
         if char.isupper():
             upper += 1
