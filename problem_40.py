@@ -1,6 +1,3 @@
-# Problem 40: Count consonants in a string
-# Find and fix the error
-
 def count_consonants(text):
     vowels = "aeiouAEIOU"
     count = 0
@@ -11,3 +8,5 @@ def count_consonants(text):
 
 sentence = "Hello World"
 print(f"Number of consonants: {count_consonants(sentence)}")
+
+
