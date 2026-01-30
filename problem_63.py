@@ -1,13 +1,13 @@
-# Problem 63: Find longest word in a sentence
-# Find and fix the error
-
 def find_longest_word(sentence):
+    if not sentence:
+        return ""
+
     words = sentence.split()
-    longest = ""
+    longest = words[0]
+
     for word in words:
         if len(word) > len(longest):
             longest = word
+
     return longest
 
-text = "The quick brown fox jumps"
-print(f"Longest word: {find_longest_word(text)}")

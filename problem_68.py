@@ -2,6 +2,7 @@
 # Find and fix the error
 
 def sum_even_indices(lst):
+    return sum(lst[::2])
     total = 0
     for i in range(0, len(lst), 2):
         total += lst[i]

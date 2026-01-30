@@ -1,11 +1,12 @@
 # Problem 67: Remove nth element from list
-# Find and fix the error
+# Fixed version
 
 def remove_nth(lst, n):
-    if n >= 0 and n < len(lst):
+    if -len(lst) <= n < len(lst):   # allow negative index
         return lst[:n] + lst[n+1:]
     return lst
 
 numbers = [1, 2, 3, 4, 5]
 result = remove_nth(numbers, 2)
 print(f"After removing: {result}")
+
