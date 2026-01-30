@@ -1,7 +1,9 @@
 # Problem 47: Check if string starts with a specific character
-# Find and fix the error
+# Fixed version
 
 def starts_with(text, char):
+    if len(text) == 0:
+        return False
     if text[0] == char:
         return True
     return False
@@ -9,3 +11,4 @@ def starts_with(text, char):
 word = "Python"
 print(f"Starts with 'P': {starts_with(word, 'P')}")
 print(f"Starts with 'J': {starts_with('', 'J')}")
+

@@ -1,8 +1,4 @@
-# Problem 46: Find product of all numbers in a list
-# Find and fix the error
+numbers = [45, 12, 78, 34, 89]
+numbers.sort(reverse=True)
 
-numbers = [2, 3, 4, 5]
-product = 0
-for num in numbers:
-    product *= num
-print(f"Product: {product}")
+print(f"Sorted: {numbers}")

@@ -1,11 +1,8 @@
 # Problem 50: Convert string to uppercase
-# Find and fix the error
+# Fixed version
 
 text = "python programming"
-uppercase = ""
-for char in text:
-    if char >= 'a' and char <= 'z':
-        uppercase += chr(ord(char) - 32)
-    else:
-        uppercase += char
+uppercase = text.upper()
+
 print(f"Uppercase: {uppercase}")
+
